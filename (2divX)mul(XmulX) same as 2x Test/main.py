@@ -8,7 +8,7 @@ failedNumbers = []
 
 
 def calculate(x):
-    res1 = (2/x) * (x*x)
+    res1 = (2/x) * (x*x)  # 2/x is rounded down so it fails sometimes
     res2 = 2*x
     if res1 == res2: passedNumbers.append([x, res1, res2])
     else: failedNumbers.append([x, res1, res2])
